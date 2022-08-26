@@ -22,9 +22,15 @@
     justify-content: space-between;
     align-items: center;
 }
-label {
-    font-size: 20px;
-    margin-bottom: 15px;
+.tabs {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 400px;
+}
+.tabs li {
+    font-size: 30px;
+    font-weight: 600;
     color: white;
 }
 input {
@@ -51,7 +57,11 @@ input {
     border-left: 3px solid white;
     height: 450px;
 }
-.login-panel img {
+.login-panel .container img {
     width: 40%;
     border-radius: 10px;
+}
+::placeholder {
+    color: white;
+    font-size: 20px;
 }
