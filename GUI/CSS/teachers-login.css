@@ -12,26 +12,80 @@
     align-items: center;
 }
 .login-panel {
-    border: 2px solid #E0C097;
+    /* border: 2px solid #E0C097;
     border-radius: 10px;
     background-color: #E0C097;
     width: 45%;
     height: 500px;
     display: flex;
-    padding: 1% 3%;
+    padding: 0% 3%;
     justify-content: space-between;
+    align-items: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 500px;
+    background-color: #E0C097;
+    padding: 22px 32px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.login-panel .tabs-header {
+    height: 60px;
+    display: flex;
     align-items: center;
 }
-.tabs {
-    list-style: none;
+.login-panel .tabs-header > div {
+    width: calc(100% / 2);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+}
+.login-panel .tabs-header > div.active {
+    background-color: white;
+    color: black;
+}
+.login-panel .tab-body {
+    position: relative;
+    height: calc(100% - 60px);
+    padding: 10px 10px;
+}
+.login-panel .tab-body img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.login-panel .tab-body > div {
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 400px;
+    align-items: center;
+    top: -200%;
+    opacity: 0;
+    margin-top: 15px;
+    transform: scale(0.9);
+    transition: opacity 500ms ease-in-out 0ms, transform 500ms ease-in-out 0ms;
 }
-.tabs li {
-    font-size: 30px;
-    font-weight: 600;
+.login-panel .tab-body > div.active {
+    top: 0px;
+    opacity: 1;
+    transform: scale(1);
+}
+.vertical-line {
+    border-left: 3px solid white;
+    height: 415px;
+}
+::placeholder {
     color: white;
+    font-size: 20px;
 }
 input {
     width: 100%;
@@ -53,10 +107,41 @@ input {
 .signup-btn a:hover {
     text-decoration: underline;
 }
-.vertical-line {
-    border-left: 3px solid white;
-    height: 450px;
+/* .tabs {
+    list-style: none;
+    display: flex;
+    margin: 0px;
 }
+.tabs li {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin: 0px;
+    margin-right: 200px;
+    margin-left: 87px;
+} */
+/* input {
+    width: 100%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #B85C38;
+    background-color: #E0C097;
+}
+.signup-btn {
+    margin-top: 150px;
+}
+.signup-btn a {
+    color: white;
+    text-decoration: none;
+}
+.signup-btn a:hover {
+    text-decoration: underline;
+}
+
 .login-panel .container img {
     width: 40%;
     border-radius: 10px;
@@ -64,4 +149,4 @@ input {
 ::placeholder {
     color: white;
     font-size: 20px;
-}
+} */

@@ -16,17 +16,49 @@
 <body>
     <section class="header">
         <div class="login-panel">
-            <ul class="tabs">
-                <li class="active">Teachers</li>
-                <li>Students</li>
-            </ul>
+            <div class="tabs-header">
+                <div class="active" onclick="teacher_tab()" id="teacher-header" class="teacher-login-panel">Teacher</div>
+                <div onclick="student_tab()" id="student-header" class="student-login-panel">Student</div>
+            </div>
+            <div class="tab-body" class="teacher-login-panel">
+                <div class="active" id="teacher-body">
+                    <form action="" class="login-essential" onsubmit="return validation()">
+                        <input type="text" name="username" placeholder="Email" id="username"> <br>
 
-            <div class="container">
-                <div class="content">
-                    <p>Hi I am Tanuj Agarwal</p>
+                        <input type="text" name="password" placeholder="Password" id="password"> <br>
+
+                        <a href="#">Forgot Password ?</a> <br>
+
+                        <button type="submit">Log In</button>
+                        <br>
+                        <div class="signup-btn">Haven't Signed Up yet? <a href="">Sign Up Here</a></div>
+                    </form>
+
+                    <div class="vertical-line"></div>
+
+                    <img src="../../images/quiz-maker-apps-tools(1).png" alt="quiz">
+                </div>
+
+
+                <div id="student-body" class="student-login-panel">
+                    <form action="" class="login-essential" onsubmit="return validation()">
+                        <input type="text" name="username" placeholder="Email" id="username"> <br>
+
+                        <input type="text" name="password" placeholder="Password" id="password"> <br>
+
+                        <a href="#">Forgot Password ?</a> <br>
+
+                        <button type="submit">Log In</button>
+                    </form>
+
+                    <div class="vertical-line"></div>
+
+                    <img src="../../images/quiz-maker-apps-tools(1).png" alt="quiz">
                 </div>
             </div>
-            <!-- <div class="login-box">
+
+        </div>
+        <!-- <div class="login-box">
                 <form action="" class="login-essential" onsubmit="return validation()">
                     <input type="text" name="username" placeholder="Email" id="username"> <br>
 
@@ -42,7 +74,6 @@
             <div class="vertical-line"></div>
             
             <img src="../../images/quiz-maker-apps-tools(1).png" alt="quiz"> -->
-        </div>
     </section>
 
     <script type="text/javascript" src="../JS/teachers-login.js"></script>
