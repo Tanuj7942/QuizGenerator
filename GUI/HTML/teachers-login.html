@@ -17,11 +17,11 @@
     <section class="header">
         <div class="login-panel">
             <div class="tabs-header">
-                <div class="active" onclick="teacher_tab()" id="teacher-header" class="teacher-login-panel">Teacher</div>
-                <div onclick="student_tab()" id="student-header" class="student-login-panel">Student</div>
+                <div onclick="teacher_tab()" id="teacher-header" class="teacher-login-panel">Teacher</div>
+                <div class="active" onclick="student_tab()" id="student-header" class="student-login-panel">Student</div>
             </div>
             <div class="tab-body" class="teacher-login-panel">
-                <div class="active" id="teacher-body">
+                <div id="teacher-body">
                     <form action="" class="login-essential" onsubmit="return validation()">
                         <input type="text" name="username" placeholder="Email" id="username"> <br>
 
@@ -40,7 +40,7 @@
                 </div>
 
 
-                <div id="student-body" class="student-login-panel">
+                <div class="active" id="student-body" class="student-login-panel">
                     <form action="" class="login-essential" onsubmit="return validation()">
                         <input type="text" name="username" placeholder="Email" id="username"> <br>
 
