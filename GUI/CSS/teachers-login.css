@@ -12,15 +12,6 @@
     align-items: center;
 }
 .login-panel {
-    /* border: 2px solid #E0C097;
-    border-radius: 10px;
-    background-color: #E0C097;
-    width: 45%;
-    height: 500px;
-    display: flex;
-    padding: 0% 3%;
-    justify-content: space-between;
-    align-items: center; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,10 +47,10 @@
 .login-panel .tab-body {
     position: relative;
     height: calc(100% - 60px);
-    padding: 10px 10px;
+    padding: 20px 30px;
 }
 .login-panel .tab-body img {
-    width: 40%;
+    width: 35%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
@@ -88,17 +79,14 @@
     font-size: 20px;
 }
 input {
-    width: 100%;
-    padding: 5px 5px;
-    margin: 5px 0;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid #B85C38;
     background-color: #E0C097;
+    border: none;
+    padding: 3px 0px;
+    font-size: 18px;
+    width: 90%;
 }
-.signup-btn {
-    margin-top: 150px;
+input:focus {
+    outline: none;
 }
 .signup-btn a {
     color: white;
@@ -107,46 +95,59 @@ input {
 .signup-btn a:hover {
     text-decoration: underline;
 }
-/* .tabs {
-    list-style: none;
-    display: flex;
-    margin: 0px;
+.forgot-password {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
 }
-.tabs li {
-    font-size: 30px;
-    font-weight: 600;
+.forgot-password:hover {
+    text-decoration: underline;
+}
+button {
+    margin: 0%;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+    padding: 5px 80px;
+    border: 2px solid white;
+    background-color: #E0C097;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: white;
+    color: black;
+}
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+    width: 120%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid #B85C38;
+}
+.teach-username, .stud-username {
+    margin-top: 20px;
+}
+.icons {
+    color: white;
+    padding: 5px;
+}
+.teacher-visible-icon, .student-visible-icon {
     color: white;
     cursor: pointer;
-    margin: 0px;
-    margin-right: 200px;
-    margin-left: 87px;
-} */
-/* input {
-    width: 100%;
-    padding: 5px 5px;
-    margin: 5px 0;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 2px solid #B85C38;
-    background-color: #E0C097;
+    
 }
-.signup-btn {
-    margin-top: 150px;
+.error-span {
+    font-size: 13px;
+    border: 2px solid rgb(250, 120, 120);
+    background-color: rgb(241, 169, 169);
+    color: red;
+    padding: 10px;
+    visibility: hidden;
 }
-.signup-btn a {
-    color: white;
-    text-decoration: none;
-}
-.signup-btn a:hover {
-    text-decoration: underline;
-}
-
-.login-panel .container img {
-    width: 40%;
-    border-radius: 10px;
-}
-::placeholder {
-    color: white;
-    font-size: 20px;
-} */

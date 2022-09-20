@@ -11,27 +11,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <section class="header">
         <div class="login-panel">
             <div class="tabs-header">
-                <div onclick="teacher_tab()" id="teacher-header" class="teacher-login-panel">Teacher</div>
-                <div class="active" onclick="student_tab()" id="student-header" class="student-login-panel">Student</div>
+                <div class="active" onclick="teacher_tab()" id="teacher-header">Teacher</div>
+                <div onclick="student_tab()" id="student-header">Student</div>
             </div>
-            <div class="tab-body" class="teacher-login-panel">
-                <div id="teacher-body">
-                    <form action="" class="login-essential" onsubmit="return validation()">
-                        <input type="text" name="username" placeholder="Email" id="username"> <br>
+            <div class="tab-body">
+                <div class="active" id="teacher-body">
+                    <form action="index.html" class="login-essential-teacher" onsubmit="return validation(this)">
+                        <span class="error-span" id="teach-login-tooltip">Username or Password is wrong.</span>
+                        <div class="input-container teach-username">
+                            <span class="material-icons icons">person</span>
+                            <input type="text" name="teach_username" placeholder="Email" id="teach_username">
+                        </div> <br>
 
-                        <input type="text" name="password" placeholder="Password" id="password"> <br>
+                        <div class="input-container teach-password">
+                            <span class="material-icons icons">lock</span>
+                            <input type="password" name="teach_password" placeholder="Password" id="teach_password">
+                            <span class="material-icons teacher-visible-icon" onclick="visibility(this)">visibility_off</span>
+                        </div> <br>
+                        <a href="#" class="forgot-password">Forgot Password ?</a> <br>
 
-                        <a href="#">Forgot Password ?</a> <br>
-
-                        <button type="submit">Log In</button>
+                        <button type="submit">LOGIN</button>
                         <br>
-                        <div class="signup-btn">Haven't Signed Up yet? <a href="">Sign Up Here</a></div>
+                        <div class="signup-btn">Haven't Signed Up yet? <br><a href="">Sign Up Here</a></div>
                     </form>
 
                     <div class="vertical-line"></div>
@@ -40,15 +48,23 @@
                 </div>
 
 
-                <div class="active" id="student-body" class="student-login-panel">
-                    <form action="" class="login-essential" onsubmit="return validation()">
-                        <input type="text" name="username" placeholder="Email" id="username"> <br>
+                <div id="student-body">
+                    <form action="index.html" class="login-essential-student" onsubmit="return validation(this)">
+                        <span class="error-span" id="stud-login-tooltip">Username or Password is wrong.</span>
+                        <div class="input-container stud-username">
+                            <span class="material-icons icons">person</span>
+                            <input type="text" name="stud_username" placeholder="Email" id="stud_username">
+                        </div> <br>
 
-                        <input type="text" name="password" placeholder="Password" id="password"> <br>
+                        <div class="input-container stud-password">
+                            <span class="material-icons icons">lock</span>
+                            <input type="password" name="stud_password" placeholder="Password" id="stud_password">
+                            <span class="material-icons student-visible-icon" onclick="visibility(this)">visibility_off</span>
+                        </div> <br>
 
-                        <a href="#">Forgot Password ?</a> <br>
+                        <a href="#" class="forgot-password">Forgot Password ?</a> <br>
 
-                        <button type="submit">Log In</button>
+                        <button type="submit">LOGIN</button>
                     </form>
 
                     <div class="vertical-line"></div>
@@ -58,22 +74,6 @@
             </div>
 
         </div>
-        <!-- <div class="login-box">
-                <form action="" class="login-essential" onsubmit="return validation()">
-                    <input type="text" name="username" placeholder="Email" id="username"> <br>
-
-                    <input type="text" name="password" placeholder="Password" id="password"> <br>
-
-                    <a href="#">Forgot Password ?</a> <br>
-
-                    <button type="submit">Log In</button>
-                </form>
-                <div class="signup-btn">Haven't Signed Up yet? <a href="">Sign Up Here</a></div>
-            </div>
-
-            <div class="vertical-line"></div>
-            
-            <img src="../../images/quiz-maker-apps-tools(1).png" alt="quiz"> -->
     </section>
 
     <script type="text/javascript" src="../JS/teachers-login.js"></script>
