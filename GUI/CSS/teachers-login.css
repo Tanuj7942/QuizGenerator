@@ -117,6 +117,7 @@ button {
     margin-top: 35px;
     margin-bottom: 50px;
     transition: 0.5s;
+    cursor: pointer;
 }
 button:hover {
     background-color: white;
