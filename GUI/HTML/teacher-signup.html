@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Teachers</title>
+    <link rel="stylesheet" href="../CSS/teacher-signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="signup-panel">
+            <div class="tab-header">
+                <div id="teacher-header">Teacher</div>
+            </div>
+            <div class="signup-body">
+                <form action="" class="signup-form">
+                    <div class="input-container">
+                        <span class="material-icons">person</span>
+                        <input type="text" name="user_name" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-container">
+                        <span class="material-icons">email</span>
+                        <input type="email" name="user_mail" placeholder="Email ID" required>
+                    </div>
+                    <div class="input-container">
+                        <span class="material-icons">phone</span>
+                        <input type="text" name="user_number" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-container">
+                        <span class="material-icons">accessibility</span>
+                        <select name="user_gender" required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Transgender">Transgender</option>
+                            <option value="Prefer Not to Say">Prefer Not to Say</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <span class="material-icons">password</span>
+                        <input type="password" name="user_password" placeholder="Password" required>
+                    </div>
+                    <div class="input-container">
+                        <span class="material-icons">password</span>
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="confirmation-body">
+                        <input type="checkbox" name="confirm_terms_and_conditions" id="confirmation_tick" required>
+                        <label for="confirm_terms_and_conditions">I agree to all conditions in <a class="terms-and-conditions"
+                                href="">T&C</a></label>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+                <div class="already-member-link">
+                    <img src="../../images/quiz-maker-apps-tools(1).png" alt=""> 
+                    <a href="" class="back-to-login">I am already a member!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="../JS/teacher-signup.js"></script>
+</body>
+
+</html>

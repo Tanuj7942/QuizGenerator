@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#2D2424, #5C3D2E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 850px;
+    background-color: #E0C097;
+    padding: 22px 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+.signup-panel .tab-header {
+    height: 60px;
+}
+.signup-panel .tab-header > div {
+    margin: 10px 220px;
+    /* width: calc(100% / 2); */
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    outline: none;
+}
+.already-member-link {
+    width: 50%;
+}
+.back-to-login {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+.back-to-login::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #B85C38;
+    display: block;
+    margin: auto;
+}
+.back-to-login:hover::after {
+    width: 75%;
+    transition: 0.7s;
+}
+img {
+    width: 100%;
+    height: 92%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    margin-bottom: 30px;
+}
+.signup-body {
+    margin: 30px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.signup-form {
+    text-align: left;
+}
+.input-container {
+    display: flex;
+    width: 120%;
+    padding: 5px 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid #B85C38;
+}
+.input-container, .confirmation-body, button {
+    margin-bottom: 30px;
+}
+input, select {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #E0C097;
+    border: none;
+    font-size: 18px;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+.material-icons {
+    color: white;
+    padding: 10px 0px;
+}
+#confirmation_tick {
+    padding: 0px;
+    width: 10%;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+label {
+    font-size: 16px;
+}
+/* input[type=checkbox] {
+    
+} */
