@@ -21,18 +21,23 @@
                 <div id="teacher-header">Teacher</div>
             </div>
             <div class="signup-body">
-                <form action="" class="signup-form">
+                <form action="" class="signup-form" onsubmit="return validation()">
+                    <div class="error_msg" id="short_pass">Password too short. Password length should be 8 atleast.</div>
+                    <div class="error_msg" id="white_space_pass">Password can't have white-space</div>
+                    <div class="error_msg" id="no_match_pass">Passwords doesn't match.</div>
+                    <div class="error_msg" id="invalid_number">Invalid Number</div>
                     <div class="input-container">
                         <span class="material-icons">person</span>
-                        <input type="text" name="user_name" placeholder="Full Name" required>
+                        <input type="text" name="user_name" id="user_name" placeholder="Full Name" required oninput="this.value = this.value.replace(/[^a-zA-Z ]/, '').replace(/  +/g, ' ')">
                     </div>
                     <div class="input-container">
                         <span class="material-icons">email</span>
-                        <input type="email" name="user_mail" placeholder="Email ID" required>
+                        <input type="email" name="user_mail" placeholder="Email ID" required oninput="this.value = this.value.replace(/[ ]/, '')">
                     </div>
                     <div class="input-container">
                         <span class="material-icons">phone</span>
-                        <input type="text" name="user_number" placeholder="Phone Number" required>
+                        <input type="text" name="user_number" placeholder="Phone Number" required oninput="this.value = this.value.replace(/[^0-9]/, '');"
+                        maxlength="10" id="phone_number">
                     </div>
                     <div class="input-container">
                         <span class="material-icons">accessibility</span>
@@ -46,11 +51,11 @@
                     </div>
                     <div class="input-container">
                         <span class="material-icons">password</span>
-                        <input type="password" name="user_password" placeholder="Password" required>
+                        <input type="password" name="user_password" placeholder="Password" required id="user_password" pattern=".{8,15}" title="Eight or more characters">
                     </div>
                     <div class="input-container">
                         <span class="material-icons">password</span>
-                        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" required id="confirm_password" pattern=".{8,15}" title="Eight or more characters">
                     </div>
                     <div class="confirmation-body">
                         <input type="checkbox" name="confirm_terms_and_conditions" id="confirmation_tick" required>
