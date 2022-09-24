@@ -60,12 +60,12 @@
 }
 img {
     width: 100%;
-    height: 92%;
+    height: 88%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     margin-bottom: 30px;
 }
-.signup-body {
+.teacher-signup-body {
     margin: 30px 15px;
     display: flex;
     justify-content: space-between;
@@ -73,7 +73,7 @@ img {
 .signup-form {
     text-align: center;
 }
-.input-container {
+.teacher-input-container {
     display: flex;
     width: 120%;
     padding: 5px 5px;
@@ -81,7 +81,7 @@ img {
     box-sizing: border-box;
     border-bottom: 2px solid #B85C38;
 }
-.input-container, .confirmation-body, button {
+.teacher-input-container, .teacher-confirmation-body, .teacher-button {
     margin-bottom: 30px;
 }
 input, select {
@@ -128,7 +128,7 @@ button {
     background-color: #E0C097;
     border-radius: 5px;
     margin-left: 50px;
-    margin-top: 25px;
+    margin-top: 15px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -147,4 +147,23 @@ button:hover {
 }
 #invalid_number {
     position: relative;
+}
+
+ /*Changes for Student Sign up page*/
+
+.student-signup-body {
+    margin: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.student-input-container {
+    display: flex;
+    width: 120%;
+    padding: 3px 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border-bottom: 2px solid #B85C38;
+}
+.student-input-container, .student-confirmation-body, .student-button {
+    margin-bottom: 25px;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up | Teachers</title>
+    <title>Sign Up | Student</title>
     <link rel="stylesheet" href="../CSS/signup.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,27 +18,27 @@
     <section class="header">
         <div class="signup-panel">
             <div class="tab-header">
-                <div id="teacher-header">Teacher</div>
+                <div id="teacher-header">Student</div>
             </div>
-            <div class="teacher-signup-body">
+            <div class="student-signup-body">
                 <form action="" class="signup-form" onsubmit="return validation()">
                     <div class="error_msg" id="white_space_pass">Password can't have white-space anywhere.</div>
                     <div class="error_msg" id="no_match_pass">Passwords doesn't match.</div>
                     <div class="error_msg" id="invalid_number">Invalid Number</div>
-                    <div class="teacher-input-container">
+                    <div class="student-input-container">
                         <span class="material-icons">person</span>
                         <input type="text" name="user_name" id="user_name" placeholder="Full Name" required oninput="this.value = this.value.replace(/[^a-zA-Z ]/, '').replace(/  +/g, ' ')">
                     </div>
-                    <div class="teacher-input-container">
+                    <div class="student-input-container">
                         <span class="material-icons">email</span>
                         <input type="email" name="user_mail" placeholder="Email ID" required oninput="this.value = this.value.replace(/[ ]/, '')">
                     </div>
-                    <div class="teacher-input-container">
+                    <div class="student-input-container">
                         <span class="material-icons">phone</span>
                         <input type="text" name="user_number" placeholder="Phone Number" required oninput="this.value = this.value.replace(/[^0-9]/, '');"
                         maxlength="10" id="phone_number">
                     </div>
-                    <div class="teacher-input-container">
+                    <div class="student-input-container">
                         <span class="material-icons">accessibility</span>
                         <select name="user_gender" required>
                             <option value="" disabled selected>Select Gender</option>
@@ -48,20 +48,24 @@
                             <option value="Prefer Not to Say">Prefer Not to Say</option>
                         </select>
                     </div>
-                    <div class="teacher-input-container">
+                    <div class="student-input-container">
                         <span class="material-icons">password</span>
                         <input type="password" name="user_password" placeholder="Password" required id="user_password" pattern=".{8,15}" title="Eight or more characters">
                     </div>
-                    <div class="teacher-input-container">
+                    <div class="student-input-container">
                         <span class="material-icons">password</span>
                         <input type="password" name="confirm_password" placeholder="Confirm Password" required id="confirm_password" pattern=".{8,15}" title="Eight or more characters">
                     </div>
-                    <div class="teacher-confirmation-body">
+                    <div class="student-input-container">
+                        <span class="material-icons">person_add</span>
+                        <input type="text" name="teacher_id" id="teacher_id" placeholder="Teacher ID" required disabled>
+                    </div>
+                    <div class="student-confirmation-body">
                         <input type="checkbox" name="confirm_terms_and_conditions" id="confirmation_tick" required>
                         <label for="confirm_terms_and_conditions">I agree to all conditions in <a class="terms-and-conditions"
                                 href="">T&C</a></label>
                     </div>
-                    <button type="submit" class="teacher-button">Register</button>
+                    <button type="submit" class="student-button">Register</button>
                 </form>
                 <div class="already-member-link">
                     <img src="../../images/quiz-maker-apps-tools(1).png" alt=""> 
