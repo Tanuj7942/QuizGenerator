@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Confirmation</title>
+    <link rel="stylesheet" href="../CSS/registration-confirmation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <div class="confirmation-panel">
+            <h1>Registration Confirmation</h1>
+            <p>A mail has been sent to you on <span>EMAIL</span>. Please enter the OTP sent through the mail to confirm your registration on Quiz Creator.</p>
+            <div>6-Digit OTP</div>
+            <form action="">
+                <div>
+                    <input type="text" required oninput="this.value = this.value.replace(/[^0-9]/, '');" maxlength="6">
+                    <div>
+                        <a href="">Resend Code</a>
+                        <div class="count_time" id="">00:00</div>
+                    </div>
+                </div>
+                <div class="error_msg">Wrong OTP!</div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="../JS/login.js"></script>
+</body>
+
+</html>

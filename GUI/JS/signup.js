@@ -2,7 +2,7 @@ function validation() {
     var phone_num = (document.getElementById("phone_number").value.trim());
     var user_pass = document.getElementById("user_password").value.trim();
     var confirm_pass = document.getElementById("confirm_password").value.trim();
-    error_msg_visibility()
+    error_msg_visibility();
 
     if (/^[6-9]\d{9}$/.test(phone_num) == false) {
         document.getElementById("invalid_number").style.visibility = "visible";
