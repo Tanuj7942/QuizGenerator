@@ -19,16 +19,18 @@
         <div class="confirmation-panel">
             <h1>Registration Confirmation</h1>
             <p>A mail has been sent to you on <span>EMAIL</span>. Please enter the OTP sent through the mail to confirm your registration on Quiz Creator.</p>
-            <div>6-Digit OTP</div>
             <form action="">
-                <div>
-                    <input type="text" required oninput="this.value = this.value.replace(/[^0-9]/, '');" maxlength="6">
-                    <div>
+                <div class="otp-input">
+                    <div class="input-and-error-msg">
+                        <input type="text" placeholder="6-Digit OTP" required oninput="this.value = this.value.replace(/[^0-9]/, '');" maxlength="6">
+                        <div class="error-msg">Wrong OTP!</div>
+                    </div>
+                    <div class="resend-code">
                         <a href="">Resend Code</a>
-                        <div class="count_time" id="">00:00</div>
+                        <div class="count-time" id="">00:00</div>
                     </div>
                 </div>
-                <div class="error_msg">Wrong OTP!</div>
+                <!-- <div class="error_msg">Wrong OTP!</div> -->
                 <button type="submit">SUBMIT</button>
             </form>
         </div>
