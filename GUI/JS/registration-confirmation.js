@@ -3,10 +3,9 @@ let time  = 10;
 
 const countdownEl = document.getElementById("timer");
 if(time == 0) {
-    time = 10;
     resendOTP();
 } else {
-    setInterval(updateCountdown, 1000)
+    setInterval(updateCountdown, 1000);
 }
 
 function updateCountdown () {
