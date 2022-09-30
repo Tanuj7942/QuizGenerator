@@ -7,3 +7,5 @@ Going for a website version of Quiz Creator
 - Users can send test to their student via mail
 - Multiple subjects can be created 
 - Multiple test for a single subject can be created 
+- Use of foreign keys 
+- Login, sign up, and mailing system included
