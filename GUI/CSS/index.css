@@ -94,9 +94,3 @@ nav .nav_links {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
-
-@media screen and (max-width: 700px) {
-    .header {
-        display: none;
-    }
-}

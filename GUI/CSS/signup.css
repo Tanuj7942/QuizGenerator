@@ -17,7 +17,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 45%;
-    height: 850px;
+    height: 90%;
     background-color: #E0C097;
     padding: 22px 40px;
     overflow: hidden;
@@ -25,14 +25,14 @@
     text-align: center;
 }
 .signup-panel .tab-header {
-    height: 60px;
+    height: 40px;
 }
 .signup-panel .tab-header > div {
-    margin: 10px 220px;
+    margin: 0px 150px;
     color: black;
     background-color: white;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 20px;
     padding: 5px;
     border-radius: 10px;
     text-transform: uppercase;
@@ -42,7 +42,7 @@
     width: 50%;
 }
 .back-to-login {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: white;
 }
@@ -59,14 +59,16 @@
     transition: 0.7s;
 }
 img {
-    width: 100%;
-    height: 88%;
+    width: 110%;
+    height: 83%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
     margin-bottom: 30px;
+    text-align: center;
 }
 .teacher-signup-body {
-    margin: 30px 15px;
+    margin: 25px 15px;
+    margin-left: 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -75,21 +77,21 @@ img {
 }
 .teacher-input-container {
     display: flex;
-    width: 120%;
+    width: 100%;
     padding: 5px 5px;
     margin: 5px 0;
     box-sizing: border-box;
     border-bottom: 2px solid #B85C38;
 }
 .teacher-input-container, .teacher-confirmation-body, .teacher-button {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 input, select {
     width: 100%;
-    padding: 10px 10px;
+    padding: 5px 10px;
     background-color: #E0C097;
     border: none;
-    font-size: 18px;
+    font-size: 15px;
 }
 input:focus, select:focus {
     outline: none;
@@ -99,7 +101,7 @@ input:focus, select:focus {
     padding: 10px 0px;
 }
 #confirmation_tick {
-    width: 30px;
+    width: 20px;
     height: 20px;
     border: none;
 }
@@ -107,7 +109,7 @@ input:focus, select:focus {
     color: rgb(255, 255, 255);
 }
 label {
-    font-size: 18px;
+    font-size: 15px;
 }
 select:invalid {
     color: white;
@@ -121,14 +123,14 @@ input:-webkit-autofill:active{
 button {
     margin: 0%;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     padding: 5px 80px;
     border: 2px solid white;
     background-color: #E0C097;
     border-radius: 5px;
-    margin-left: 50px;
-    margin-top: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -137,7 +139,7 @@ button:hover {
     color: black;
 }
 .error_msg {
-    font-size: 13px;
+    font-size: 11px;
     border: 2px solid rgb(250, 120, 120);
     background-color: rgb(241, 169, 169);
     color: red;
@@ -149,21 +151,91 @@ button:hover {
     position: relative;
 }
 
- /*Changes for Student Sign up page*/
+/*Changes for Student Sign up page*/
 
 .student-signup-body {
-    margin: 15px 10px;
+    margin: 10px 15px;
+    margin-left: 0px;
     display: flex;
     justify-content: space-between;
 }
 .student-input-container {
     display: flex;
-    width: 120%;
-    padding: 3px 5px;
-    margin: 5px 0;
+    width: 100%;
+    padding: 0px 5px;
+    margin: 3px 0;
     box-sizing: border-box;
     border-bottom: 2px solid #B85C38;
 }
 .student-input-container, .student-confirmation-body, .student-button {
-    margin-bottom: 25px;
+    margin-bottom: 13px;
+}
+.student-picture {
+    width: 105%;
+    height: 83%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Changes for different screen */
+@media screen and (max-width: 1980px) and (min-width: 1400px) {
+
+    /* For Teacher Panel */
+    .signup-panel .tab-header {
+        height: 60px;
+    }
+    .signup-panel .tab-header > div {
+        margin: 0px 180px;
+        font-size: 25px;
+    }
+    .back-to-login {
+        font-size: 25px;
+    }
+    img {
+        width: 105%;
+        height: 100%;
+    }
+    .teacher-signup-body {
+        margin: 25px 20px;
+        margin-left: 10px;
+    }
+    .teacher-input-container {
+        width: 130%;
+    }
+    .teacher-input-container, .teacher-confirmation-body, .teacher-button {
+        margin-bottom: 25px;
+    }
+    input, select {
+        width: 100%;
+        font-size: 18px;
+    }
+    label {
+        font-size: 18px;
+    }
+    button {
+        font-size: 18px;
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .error_msg {
+        font-size: 13px;
+    }
+
+    /* For Student Panel */
+    .student-signup-body {
+        margin: 10px 20px;
+    }
+    .student-input-container {
+        width: 120%;
+        padding: 5px 5px;
+        margin: 10px 0;
+    }
+    .student-input-container, .student-confirmation-body, .student-button {
+        margin-bottom: 25px;
+    }
+    .student-picture {
+        height: 93%;
+    }
 }
