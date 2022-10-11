@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(#2D2424, #5C3D2E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 88%;
+    height: 85%;
+    background-color: #E0C097;
+    padding: 22px 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Changes for different screen */
+@media screen and (max-width: 1980px) and (min-width: 1400px) {
+
+}
