@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    list-style: none;
 }
 .header {
     min-height: 100vh;
@@ -24,6 +25,9 @@
     border-radius: 10px;
     text-align: center;
     display: flex;
+}
+.tab-links {
+
 }
 
 /* Changes for different screen */
