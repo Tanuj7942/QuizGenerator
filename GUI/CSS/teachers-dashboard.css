@@ -3,6 +3,7 @@
     margin: 0px;
     font-family: 'Poppins', sans-serif;
     list-style: none;
+    text-decoration: none;
 }
 .header {
     min-height: 100vh;
@@ -17,19 +18,36 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 88%;
-    height: 85%;
+    width: 95%;
+    height: 93%;
     background-color: #E0C097;
-    padding: 22px 40px;
     overflow: hidden;
     border-radius: 10px;
-    text-align: center;
     display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.tab-links {
-
+.user-photo img {
+    width: 148px;
+    clip-path: circle();
 }
-
+h3 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.side-panel {
+    font-size: 20px;
+    padding: 25px 0px;
+    width: 25%;
+    background-color: #E0C097;
+    text-align: center;
+}
+.main-panel {
+    width: 100%;
+    background-color: white;
+}
+.main-link {
+    padding: 10px 0px;
+}
 /* Changes for different screen */
 @media screen and (max-width: 1980px) and (min-width: 1400px) {
 
