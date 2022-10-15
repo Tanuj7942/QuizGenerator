@@ -31,8 +31,8 @@
     clip-path: circle();
 }
 h3 {
-    font-size: 25px;
-    color: rgb(255, 255, 255);
+    font-size: 30px;
+    color: #915e45
 }
 .side-panel {
     font-size: 20px;
@@ -45,8 +45,24 @@ h3 {
     width: 100%;
     background-color: white;
 }
+.tab-links {
+    padding-top: 50px;
+}
+.side-panel .tab-links ul li {
+    line-height: 55px;
+    border: 1px solid white;
+}
+.side-panel .tab-links ul li a {
+    color: black;
+    width: 100;
+    padding: 0px 45px;
+    border: 1px solid white;
+}
+.material-icons {
+    padding: 5px;
+}
 .main-link {
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
 }
 /* Changes for different screen */
 @media screen and (max-width: 1980px) and (min-width: 1400px) {
