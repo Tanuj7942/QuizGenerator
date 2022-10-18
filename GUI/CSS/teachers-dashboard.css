@@ -55,17 +55,16 @@ h3 {
 .side-panel .tab-links ul li a {
     color: black;
     width: 100;
-    padding: 6px 35px;
-    border: 1px solid white;
+    padding: 6px 30px;
 }
 .material-icons {
     padding: 5px;
-    border: 1px solid white;
     vertical-align: middle;
 }
 /* .main-link {
     padding: 10px 0px;
 } */
+
 /* Changes for different screen */
 @media screen and (max-width: 1980px) and (min-width: 1400px) {
 
