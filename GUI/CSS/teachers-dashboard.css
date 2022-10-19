@@ -27,15 +27,18 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .user-photo img {
-    width: 148px;
+    width: 90px;
     clip-path: circle();
 }
 h3 {
     font-size: 30px;
-    color: #915e45
+    color: #915e45;
+}
+.user-name {
+    color: #814c31;
 }
 .side-panel {
-    font-size: 17px;
+    font-size: 14px;
     padding: 25px 0px;
     width: 25%;
     background-color: #E0C097;
@@ -46,24 +49,49 @@ h3 {
     background-color: white;
 }
 .tab-links {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .side-panel .tab-links ul li {
-    line-height: 55px;
-    border: 1px solid white;
+    line-height: 45px;
+    /* border-left: 1px solid transparent; */
+}
+.side-panel .tab-links ul ul {
+    position: static;
+}
+.side-panel .tab-links ul ul li a {
+    font-size: 12px;
+}
+.side-panel .tab-links ul ul li {
+    display: none;
 }
 .side-panel .tab-links ul li a {
-    color: black;
-    width: 100;
-    padding: 6px 30px;
+    color: #814c31;
+    width: 100%;
+    padding: 0px 30px;
+    /* border: 1px solid white; */
+}
+.side-panel .tab-links ul li:hover {
+    background-color: #ebc390;
+    border-left: 4px solid #915e45;
 }
 .material-icons {
     padding: 5px;
     vertical-align: middle;
+    /* border: 1px solid white; */
+    cursor: pointer;
 }
-/* .main-link {
-    padding: 10px 0px;
-} */
+.main-link {
+    /* padding: 10px 0px; */
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    /* border-bottom: 1px solid white; */
+    /* display: block; */
+}
+.responses {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+li {
+    display: block;
+}
 
 /* Changes for different screen */
 @media screen and (max-width: 1980px) and (min-width: 1400px) {
