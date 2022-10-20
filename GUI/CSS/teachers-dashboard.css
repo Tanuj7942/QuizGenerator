@@ -62,7 +62,8 @@ h3 {
     font-size: 12px;
 }
 .side-panel .tab-links ul ul li {
-    display: none;
+    line-height: 35px;
+    /* display: none; */
 }
 .side-panel .tab-links ul li a {
     color: #814c31;
